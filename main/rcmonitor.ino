@@ -1,11 +1,7 @@
 #include <Arduino.h>
 #include "rcmonitor.h"
 
-#ifdef ESP32
-  #include <NimBLEDevice.h>
-#else
-  #include <bluefruit.h>
-#endif
+#include <NimBLEDevice.h>
 
 #define CMD_TYPE_REMOVE_ALL 0
 #define CMD_TYPE_REMOVE 1
